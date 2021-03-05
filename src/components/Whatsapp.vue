@@ -38,12 +38,14 @@ export default {
     background: transparent !important;
     position: fixed !important;
     bottom: 15px;
-    right: 15px;
-    width: 48px;
-    height: 48px;
+    right: 0px;
     border-radius: 50%;
     outline: none !important;
     border: none !important;
+  }
+  @media screen and (max-width:625px) {
+    width: 60px;
+    height: 60px;
   }
 }
 </style>
