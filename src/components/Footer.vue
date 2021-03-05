@@ -47,7 +47,7 @@
             <li>
               <v-icon>mdi-chevron-right</v-icon>
               <router-link
-                to="productos-textiles"
+                to="textiles"
                 style="text-decoration:none; color: white"
               >
                 Productos Textiles
@@ -65,16 +65,16 @@
             <li>
               <v-icon>mdi-chevron-right</v-icon>
               <router-link
-                to="despensa-bar"
+                to="dulces-despensa-bar"
                 style="text-decoration:none; color: white"
               >
-                Despensa Bar
+                Dulces y Despensa Bar
               </router-link>
             </li>
             <li>
               <v-icon>mdi-chevron-right</v-icon>
               <router-link
-                to="productos-tecnologicos"
+                to="tecnologia"
                 style="text-decoration:none; color: white"
               >
                 Productos Tecnológicos
@@ -83,7 +83,7 @@
             <li>
               <v-icon>mdi-chevron-right</v-icon>
               <router-link
-                to="productos-seguridad"
+                to="seguridad-higiene"
                 style="text-decoration:none; color: white"
               >
                 Seguridad e Higiene
@@ -103,22 +103,26 @@
             La Merchandising
           </v-btn>
           <v-btn
-            href="https://www.facebook.com/lamerchandising/"
+            href="https://www.instagram.com/lamerchandising/"
             target="_blank"
             text
           >
             <v-icon class="mr-10">mdi-instagram</v-icon>
             La Merchandising
           </v-btn>
-          <!--<a 
-            href="https://www.facebook.com/lamerchandising/"
-            target="_blank" style="text-decoration:none"
-          >
-            <v-icon class="ml-10">mdi-instagram</v-icon>La Merchandising
-          </a>-->
+          <div class="content_asociate">
+            <h3 class="content_title_footer">Asociados a:</h3>
+            <hr class="content_title_hr" style="width:120px; height:2px">
+            <v-img
+              :src="require('@/images/asociate.png')"
+              alt="asociate"
+              width="180"
+              class="content_asociate__img"
+            />
+          </div>
         </v-col>
         <v-col
-          class="primary lighten-2 py-4 pt-10 text-center white--text"
+          class="primary lighten-2 py-4 text-center white--text content_year"
           cols="12"
         >
           {{ new Date().getFullYear() }} — <strong>La Merchandising</strong>
@@ -167,5 +171,16 @@
 .content_col_footer {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.content_asociate {
+  padding-top: 10px;
+  &__img {
+    width: 180px;
+    margin: auto;
+    background: white;
+  }
+}
+.content_year {
+  margin-top: 15px;
 }
 </style>

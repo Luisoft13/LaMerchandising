@@ -81,6 +81,19 @@ export default {
         drawer: false,
         group: null,
     }),
+    metaInfo () {
+        return {
+            title: "La Merchandising",
+            titleTemplate: `%s | Nosotros`,
+            link: [
+                {
+                    rel: 'icon',
+                    type: 'image/png',
+                    href: "./logo.png"
+                }
+            ]
+        }
+    },
 };
 </script>
 <style lang="scss" scoped>

@@ -1,7 +1,7 @@
 <template>
   <div class="content_product_section">
       <h1 class="text-center content_title_products">Mis productos</h1>
-      <v-row>
+      <v-row style="justify-content:center">
         <v-col
           v-for="card in items"
           :key="card.title"
@@ -19,7 +19,8 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn color="#00677f" dark>
-                Ver productos
+                <router-link class="content_images_btn" :to="card.to">Ver productos</router-link>
+                <v-icon color="white">mdi-arrow-right</v-icon>
               </v-btn>
             </v-card-actions>
           </v-card>
@@ -38,18 +39,35 @@ export default {
           id: 1,
           src: require("@/images/ProductSection/img1.png"),
           title: 'Productos textiles',
+          to: "textiles",
           flex:12,
         },
         {
           id: 2,
           src: require("@/images/ProductSection/img2.png"),
           title: 'Otros Productos',
+          to: "otros-productos",
           flex: 12,
         },
         {
           id: 3,
           src: require("@/images/ProductSection/img3.png"),
-          title: 'Despensa bar',
+          title: 'Dulces y Despensa Bar',
+          to: "dulces-despensa-bar",
+          flex: 12,
+        },
+        {
+          id: 4,
+          src: require("@/images/ProductSection/img4.png"),
+          title: 'Tecnología',
+          to: "tecnologia",
+          flex: 12,
+        },
+        {
+          id: 5,
+          src: require("@/images/ProductSection/img5.png"),
+          title: 'Seguridad e higiene',
+          to: "seguridad-higiene",
           flex: 12,
         },
       ]
@@ -62,6 +80,7 @@ export default {
   padding-top: 30px;
   margin-left:30px;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 .content_title_products {
   text-transform: uppercase;
@@ -75,5 +94,8 @@ export default {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
+}
+.content_images_btn {
+  color: white !important;
 }
 </style>

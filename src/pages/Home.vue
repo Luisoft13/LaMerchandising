@@ -6,6 +6,7 @@
         <ProductTextiles/>
         <Welcome/>
         <Footer/>
+        <Whatsapp/>
     </div>
 </template>
 
@@ -16,6 +17,8 @@ import ProductSection from '@/components/ProductSection.vue'
 import ProductTextiles from '@/components/Products/ProductsTextiles.vue'
 import Welcome from '@/components/Welcome.vue'
 import Footer from '@/components/Footer.vue'
+import Whatsapp from '@/components/Whatsapp.vue'
+
 
 export default {
   name: 'App',
@@ -26,8 +29,22 @@ export default {
     ProductSection,
     ProductTextiles,
     Welcome,
-    Footer
+    Footer,
+    Whatsapp
   },
+  metaInfo () {
+        return {
+            title: "La Merchandising",
+            titleTemplate: `%s | Inicio`,
+            link: [
+                {
+                    rel: 'icon',
+                    type: 'image/png',
+                    href: "./logo.png"
+                }
+            ]
+        }
+    },
   data: () => ({
       drawer: false,
       group: null,

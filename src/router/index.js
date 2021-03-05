@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueMeta from 'vue-meta'
 
 Vue.use(VueRouter)
+Vue.use(VueMeta)
 
 const routes = [
   {
@@ -32,8 +34,8 @@ const routes = [
     component: () => import("@/pages/ProductsTecnologiaPage.vue")
   },
   {
-    path: '/despensa-bar',
-    name: 'despensa-bar',
+    path: '/dulces-despensa-bar',
+    name: 'dulces-despensa-bar',
     component: () => import("@/pages/ProductsDespensaBarPage.vue")
   },
   {

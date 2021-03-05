@@ -8,7 +8,11 @@
                 <h2 class="subtitle_welcome">RENEE GUIULFO</h2>
             </v-col>
             <v-col cols="12" sm="4" class="content_image">
-                <v-img src="https://lamerchandising.com/templates/yootheme/cache/m-f83dc352.png"></v-img>
+                <v-img
+                    :src="require('@/images/background.png')"
+                    height="400px"
+                    class="content_fondo_image"
+                />
             </v-col>
         </v-row>
         <v-row>
@@ -21,7 +25,8 @@
                     No dude en contactarnos para solicitar una mayor información o un presupuesto personalizado.
                 </h4>
                 <v-btn text small class="mt-5">
-                    Conoce más sobre nosotros
+                    <router-link to="nosotros"> Conoce más sobre nosotros</router-link>
+                    <v-icon>mdi-arrow-right</v-icon>
                 </v-btn>
             </v-col>
         </v-row>

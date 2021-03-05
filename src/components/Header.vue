@@ -3,21 +3,21 @@
         <v-app-bar class="content-app-bar" dense flat absolute v-if="$vuetify.breakpoint.mdOnly || $vuetify.breakpoint.smOnly">
         <v-toolbar flat class="mainHeader">
             <v-img
-            src="https://lamerchandising.com/templates/yootheme/cache/la-merchandising-d8428bde.png"
-            alt="RTS ENVIRONMENTAL SERVICES, INC."
-            width="150"
+              :src="require('@/images/logo.png')"
+              alt="RTS ENVIRONMENTAL SERVICES, INC."
+              width="150"
             />
             <v-spacer></v-spacer>
             <v-toolbar-items>
-            <v-btn text><router-link to="home">Inicio</router-link></v-btn>
-            <v-btn text><router-link to="nosotros" exact-path>Nosotros</router-link></v-btn>
+            <v-btn text to="home">Inicio</v-btn>
+            <v-btn text to="nosotros" exact-path>Nosotros</v-btn>
             <v-list-group class="content_list_group" :value="false">
               <template v-slot:activator>
                 <v-list-item class="content_list_item">
                   <!--<v-list-item-action>
                         <v-icon>mdi-home</v-icon>
                     </v-list-item-action>-->
-                  <v-btn text>Productos</v-btn>
+                  <v-btn width="100%" text>Productos</v-btn>
                 </v-list-item>
               </template>
 
@@ -25,7 +25,7 @@
                 <v-list-item-title>{{ item.title }}</v-list-item-title>
 
                 <v-list-item-icon>
-                  <v-icon>{{ item.icon }}</v-icon>
+                  <v-img width="25px" :src="item.icon"></v-img>
                 </v-list-item-icon>
               </v-list-item>
             </v-list-group>
@@ -34,13 +34,13 @@
         </v-app-bar>
         <v-app-bar class="content-app-bar" flat dense v-if="$vuetify.breakpoint.xsOnly">
           <v-img
-            src="https://lamerchandising.com/templates/yootheme/cache/la-merchandising-d8428bde.png"
+            :src="require('@/images/logo.png')"
             alt="RTS ENVIRONMENTAL SERVICES, INC."
             width="200"
           />
           <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
         </v-app-bar>
-        <v-navigation-drawer v-model="drawer" absolute temporary>
+        <v-navigation-drawer v-model="drawer" absolute temporary class="content_drawer">
           <v-app-bar flat color="white">
               <v-spacer></v-spacer>
               <v-icon
@@ -76,7 +76,7 @@
                 <v-list-item-title>{{ item.title }}</v-list-item-title>
 
                 <v-list-item-icon>
-                  <v-icon>{{ item.icon }}</v-icon>
+                  <v-img width="25px" :src="item.icon"></v-img>
                 </v-list-item-icon>
               </v-list-item>
             </v-list-group>
@@ -109,35 +109,35 @@ export default {
     ],
     products: [
       {
-        icon: "mdi-home",
+        icon: require('@/images/icons/print.png'),
         text: "Inicio",
         to:"tecnologia",
         title: "Tecnología",
         active: true,
       },
       {
-        icon: "mdi-home",
+        icon: require('@/images/icons/shirt.png'),
         text: "Nosotros",
         to:"textiles",
         title: "Textiles",
         active: false,
       },
       {
-        icon: "mdi-home",
+        icon: require('@/images/icons/candy-shop.png'),
         text: "Inicio",
-        to:"despensa-bar",
-        title: "Despensa Bar",
+        to:"dulces-despensa-bar",
+        title: "Dulces y Despensa Bar",
         active: true,
       },
       {
-        icon: "mdi-home",
+        icon: require('@/images/icons/school-supplies.png'),
         text: "Nosotros",
         to:"otros-productos",
         title: "Otros Productos",
         active: false,
       },
       {
-        icon: "mdi-home",
+        icon: require('@/images/icons/cleaning.png'),
         text: "Nosotros",
         to:"seguridad-higiene",
         title: "Seguridad e higiene",
@@ -150,6 +150,14 @@ export default {
 <style>
 .v-list-item__icon {
     min-width: 20px !important;
+}
+.v-list-item--active {
+  background-color: rgb(0, 140,127) !important;
+  color: white !important;
+}
+.v-btn:before {
+  background-color: rgb(0, 140,127) !important;
+  color: white !important;
 }
 </style>
 <style lang="scss">
@@ -195,5 +203,8 @@ export default {
 }
 .content_icon_close {
   padding-right: 8px;
+}
+.content_drawer {
+  background-color:rgb(0, 103, 127)
 }
 </style>
