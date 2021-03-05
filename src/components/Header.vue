@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-app-bar class="content-app-bar" dense flat absolute v-if="$vuetify.breakpoint.mdOnly || $vuetify.breakpoint.smOnly">
+        <v-app-bar class="content-app-bar" dense flat absolute v-if="$vuetify.breakpoint.mdOnly || $vuetify.breakpoint.smOnly || $vuetify.breakpoint.lgOnly">
         <v-toolbar flat class="mainHeader">
             <v-img
               :src="require('@/images/logo.png')"
