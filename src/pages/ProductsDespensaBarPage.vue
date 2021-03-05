@@ -29,7 +29,7 @@
               @click="showModal(card)"
             >
               <v-card class="content_card">
-                <v-img :src="card.src">
+                <v-img :src="card.src" class="content_images">
                 </v-img>
                 <div class="d-flex content_title_and_subtitle">
                   <h3
