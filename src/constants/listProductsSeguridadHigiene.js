@@ -3,7 +3,7 @@ const listProductsSeguridadHigiene = [
     {
         id: 1,
         src: require("@/images/higiene/img1.png"),
-        name: "Cepillos Bambu Liquidación",
+        name: "Cepillos Bambu",
         code: "LM-SH001",
         flex: 12,
     },
@@ -52,7 +52,7 @@ const listProductsSeguridadHigiene = [
     },{
         id: 9,
         src: require("@/images/higiene/img9.png"),
-        name: "Lentes",
+        name: "Lentes protectores",
         code: "LM-SH009",
         flex: 12,
     },{
@@ -79,7 +79,7 @@ const listProductsSeguridadHigiene = [
     {
         id: 13,
         src: require("@/images/higiene/img13.png"),
-        name: "Overol",
+        name: "Overol antibacterial",
         code: "LM-SH013",
         flex: 12,
     },

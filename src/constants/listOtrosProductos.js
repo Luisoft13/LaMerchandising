@@ -24,7 +24,7 @@ const listOtrosProductos = [
         id: 4,
         src: require("@/images/otrosproductos/img4.png"),
         code: "LM-TP004",
-        name: "Libreta de Cuerina",
+        name: "Libreta de tela y cuerina",
         flex: 12,
       },
       {
@@ -52,23 +52,23 @@ const listOtrosProductos = [
         id: 8,
         src: require("@/images/otrosproductos/img8.png"),
         code: "LM-TP008",
-        name: "Taza con cuchara de trigo",
+        name: "Taza con cuchara en material de fibra de trigo",
         flex: 12,
       },
       {
         id: 9,
         src: require("@/images/otrosproductos/img9.png"),
         code: "LM-TP009",
-        name: "Taza con cuchara de trigo",
+        name: "Taza con cuchara en material de fibra de trigo",
         flex: 12,
       },
-      {
+      /*{
         id: 10,
         src: require("@/images/otrosproductos/img10.png"),
         code: "LM-TP010",
         name: "USB pulsera",
         flex: 12,
-      },
+      },*/
       {
         id: 11,
         src: require("@/images/otrosproductos/img11.png"),
@@ -179,7 +179,7 @@ const listOtrosProductos = [
         id: 26,
         src: require("@/images/otrosproductos/img26.png"),
         code: "LM-TP026",
-        name: "Libreta 100% cuero",
+        name: "Libreta-agenda cuero 100%",
         flex: 12,
       },
       {
@@ -193,7 +193,7 @@ const listOtrosProductos = [
         id: 28,
         src: require("@/images/otrosproductos/img28.png"),
         code: "LM-TP028",
-        name: "Libreta biodegradable papel bond",
+        name: "Libreta biodegradable papel bond con lapicero y Post-it",
         flex: 12,
       },
       {
@@ -235,7 +235,7 @@ const listOtrosProductos = [
         id: 34,
         src: require("@/images/otrosproductos/img34.png"),
         code: "LM-TP034",
-        name: "Porta tarjetas con hilo de metal",
+        name: "Porta tarjetas con filo de metal",
         flex: 12,
       },
       {
@@ -291,7 +291,7 @@ const listOtrosProductos = [
         id: 42,
         src: require("@/images/otrosproductos/img42.png"),
         code: "LM-TP042",
-        name: "Portavasos con telar en cuero y bio-cuero con correa cerrado",
+        name: "Portavasos con telar en cuero y bio-cuero con correa para cerrado",
         flex: 12,
       },
       {
@@ -319,7 +319,7 @@ const listOtrosProductos = [
         id: 46,
         src: require("@/images/otrosproductos/img46.png"),
         code: "LM-TP046",
-        name: "Porta retrato en bio-cuero con polar",
+        name: "Porta retrato en bio-cuero con telar",
         flex: 12,
       },
       {
@@ -347,7 +347,7 @@ const listOtrosProductos = [
         id: 50,
         src: require("@/images/otrosproductos/img50.png"),
         code: "LM-TP050",
-        name: "Vasos con impresión",
+        name: "Vasos en vidrio y acrílico estampado",
         flex: 12,
       },
       {
@@ -452,7 +452,7 @@ const listOtrosProductos = [
         id: 65,
         src: require("@/images/otrosproductos/img65.png"),
         code: "LM-TP065",
-        name: "Llavero pelota antistress 2",
+        name: "Llavero pelota antistress",
         flex: 12,
       },
       {
@@ -642,7 +642,7 @@ const listOtrosProductos = [
         id: 92,
         src: require("@/images/otrosproductos/img92.png"),
         code: "LM-TP092",
-        name: "Monederos Neopreno",
+        name: "Monedero en material de neopreno",
         flex: 12,
       },
       {
@@ -705,7 +705,7 @@ const listOtrosProductos = [
         id: 101,
         src: require("@/images/otrosproductos/img101.png"),
         code: "LM-TP101",
-        name: "Agendas variedade 2018",
+        name: "Agendas variedade",
         flex: 12,
       },
     {

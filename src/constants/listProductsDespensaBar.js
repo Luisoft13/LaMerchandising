@@ -31,14 +31,14 @@ const listProductsDespensaBar = [
     {
         id: 5,
         src: require("@/images/despensa/img5.png"),
-        name: "Portabella",
+        name: "Portabella en bio-cuero",
         code: "LM-DDB005",
         flex: 12,
     },
     {
         id: 6,
         src: require("@/images/despensa/img6.png"),
-        name: "Portabotella con asas de metal",
+        name: "Porta botella en cuero con asa de metal",
         code: "LM-DDB006",
         flex: 12,
     },
@@ -59,7 +59,7 @@ const listProductsDespensaBar = [
     {
         id: 9,
         src: require("@/images/despensa/img9.png"),
-        name: "Bolsa pequeña con impresión",
+        name: "Bolsa pequeña con dulces e impresión",
         code: "LM-DDB009",
         flex: 12,
     },

@@ -171,7 +171,7 @@ export default {
   justify-content: flex-end;
 }
 .content_images {
-  height: 170px;
+  height: auto;
 }
 .content_img_modal {
   height: 350px;

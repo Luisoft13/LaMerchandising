@@ -5,7 +5,7 @@
             <v-img
               :src="require('@/images/logo.png')"
               alt="RTS ENVIRONMENTAL SERVICES, INC."
-              width="150"
+              width="200"
             />
             <v-spacer></v-spacer>
             <v-toolbar-items>
@@ -188,8 +188,11 @@ export default {
 }
 .content-app-bar {
   background-color: white !important;
-  padding-top: 12px;
+  margin-top: 25px !important;
   height: 80px !important;
+  @media screen and (max-width: 625px) {
+    margin-top: 15px !important;
+  }
 }
 .content_list_group {
   margin-top: auto;
