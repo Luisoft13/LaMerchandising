@@ -137,7 +137,7 @@ export default {
 .content_app {
   min-height: 100% !important;
   background: #f3f3f3;
-  margin-top: 80px;
+  margin-top: 110px;
   margin-bottom: 50px;
   @media screen and (max-width: 625px){
     margin-top: 0px;
