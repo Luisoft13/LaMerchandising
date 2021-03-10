@@ -188,7 +188,7 @@ export default {
 }
 .content-app-bar {
   background-color: white !important;
-  margin-top: 25px !important;
+  margin-top: 30px !important;
   height: 80px !important;
   @media screen and (max-width: 625px) {
     margin-top: 15px !important;

@@ -32,7 +32,7 @@
 </script>
 <style lang="scss" scoped>
 .heroBlock {
-  margin-top: 80px;
+  margin-top: 110px;
   @media screen and (max-width: 625px){
     margin-top: 0px;
   }
