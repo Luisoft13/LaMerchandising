@@ -10,7 +10,7 @@ const listProductsTextiles = [
         id: 2,
         src: require("@/images/textiles/img2.png"),
         code: "LM-T002",
-        name: "Forro Impermeable",
+        name: "Gorro con bordado",
         flex: 12,
       },
       {

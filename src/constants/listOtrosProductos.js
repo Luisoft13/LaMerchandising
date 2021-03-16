@@ -62,13 +62,13 @@ const listOtrosProductos = [
         name: "Taza con cuchara en material de fibra de trigo",
         flex: 12,
       },
-      /*{
+      {
         id: 10,
-        src: require("@/images/otrosproductos/img10.png"),
+        src: require("@/images/otrosproductos/img106.png"),
         code: "LM-TP010",
-        name: "USB pulsera",
+        name: "Identificador maleta en bio-cuero con telar",
         flex: 12,
-      },*/
+      },
       {
         id: 11,
         src: require("@/images/otrosproductos/img11.png"),
@@ -354,7 +354,7 @@ const listOtrosProductos = [
         id: 51,
         src: require("@/images/otrosproductos/img51.png"),
         code: "LM-TP051",
-        name: "Libreta con hojas rayas",
+        name: "Libreta con hojas rayadas",
         flex: 12,
       },
       {
@@ -705,14 +705,14 @@ const listOtrosProductos = [
         id: 101,
         src: require("@/images/otrosproductos/img101.png"),
         code: "LM-TP101",
-        name: "Agendas variedade",
+        name: "Agendas variadas",
         flex: 12,
       },
     {
         id: 102,
         src: require("@/images/otrosproductos/img102.png"),
         code: "LM-TP102",
-        name: "Pulsera en plástico con metal para imprimir",
+        name: "Pulsera regla en plástico con metal para imprimir",
         flex: 12,
     },
     {
@@ -736,13 +736,13 @@ const listOtrosProductos = [
         name: "Monedero en 100% cuero",
         flex: 12,
     },
-    {
+    /*{
         id: 106,
         src: require("@/images/otrosproductos/img106.png"),
         code: "LM-TP106",
         name: "Identificador maleta en bio-cuero con telar",
         flex: 12,
-    },
+    },*/
   ]
   
   export { listOtrosProductos }
