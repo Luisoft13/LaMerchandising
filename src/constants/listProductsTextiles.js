@@ -10,7 +10,7 @@ const listProductsTextiles = [
         id: 2,
         src: require("@/images/textiles/img2.png"),
         code: "LM-T002",
-        name: "Casaca Impermeable",
+        name: "Forro Impermeable",
         flex: 12,
       },
       {
@@ -242,7 +242,7 @@ const listProductsTextiles = [
         id: 35,
         src: require("@/images/textiles/img35.png"),
         code: "LM-T035",
-        name: "Neceser de diseño especial con productos toalla,bloqueador,alcohol en gel,repelente y toallas desechables",
+        name: "Neceser en diseño  con productos exclusivos",
         flex: 12,
       },
       {

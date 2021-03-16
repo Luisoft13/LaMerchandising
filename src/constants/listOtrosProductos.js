@@ -298,7 +298,7 @@ const listOtrosProductos = [
         id: 43,
         src: require("@/images/otrosproductos/img43.png"),
         code: "LM-TP043",
-        name: "Tarjetero con telar cuero y bio-cuero",
+        name: "Tarjetero para mesa de bio-cuero con telar",
         flex: 12,
       },
       {
@@ -347,7 +347,7 @@ const listOtrosProductos = [
         id: 50,
         src: require("@/images/otrosproductos/img50.png"),
         code: "LM-TP050",
-        name: "Vasos en vidrio y acrílico estampado",
+        name: "Vasos en vidrio y acrílico con impresión no estampado",
         flex: 12,
       },
       {

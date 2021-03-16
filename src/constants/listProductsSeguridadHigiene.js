@@ -72,7 +72,7 @@ const listProductsSeguridadHigiene = [
     {
         id: 12,
         src: require("@/images/higiene/img12.png"),
-        name: "Mochilla Pulverizadora",
+        name: "Pulverizador con fácil movilidad",
         code: "LM-SH012",
         flex: 12,
     },

@@ -10,6 +10,7 @@
         <div class="content_title">
             <h1 class="content_h1">Nuestra empresa</h1>
             <h2 class="content_h2">Nuestra amplia experiencia nos ha convertido en una empresa cuya misión es ofrecer productos publicitarios que se integren con las estrategias de marketing de cada empresa.</h2>
+            <h2 class="content_h2">Cumplimos con las fechas de entrega comprometidas con los clientes sin ningún retraso y eso nos diferencia ya que nuestros clientes no necesitan más que nuestra palabra y compromiso</h2>
         </div>
     </v-container>
     <v-container class="container_fortalezas">
@@ -153,6 +154,12 @@ export default {
             width: 100px;
             margin: auto;
         }
+    }
+}
+.container_fortalezas {
+    margin-top: 20px;
+    @media screen and (max-width: 625px){
+        margin-top: 200px;
     }
 }
 .content_second_block {
