@@ -72,7 +72,7 @@ const listProductsTecnologia = [
     },
     {
         id: 11,
-        src: require("@/images/tecnologia/img11.png"),
+        src: require("@/images/tecnologia/img11.jpg"),
         name: "USB Tarjeta",
         code: "LM-TEC011",
         flex: 12,

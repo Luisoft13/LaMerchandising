@@ -3,7 +3,7 @@
         <v-app-bar class="content-app-bar" dense flat absolute v-if="$vuetify.breakpoint.mdOnly || $vuetify.breakpoint.smOnly || $vuetify.breakpoint.lgOnly">
         <v-toolbar flat class="mainHeader">
             <v-img
-              :src="require('@/images/logo.png')"
+              :src="require('@/images/icons/logo.png')"
               alt="RTS ENVIRONMENTAL SERVICES, INC."
               width="200"
             />
@@ -34,7 +34,7 @@
         </v-app-bar>
         <v-app-bar class="content-app-bar" flat dense v-if="$vuetify.breakpoint.xsOnly">
           <v-img
-            :src="require('@/images/logo.png')"
+            :src="require('@/images/icons/logo.png')"
             alt="RTS ENVIRONMENTAL SERVICES, INC."
             width="200"
           />

@@ -17,13 +17,13 @@
       return {
         items: [
           {
-            src: require('@/images/slider1.png'),
+            src: require('@/images/icons/slider1.png'),
           },
           {
-            src: require('@/images/slider2.png'),
+            src: require('@/images/icons/slider2.png'),
           },
           {
-            src: require('@/images/slider3.png'),
+            src: require('@/images/icons/slider3.png'),
           },
         ],
       }

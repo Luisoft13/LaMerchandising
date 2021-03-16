@@ -9,7 +9,7 @@ const listProductsDespensaBar = [
     },
     {
         id: 2,
-        src: require("@/images/despensa/img2.png"),
+        src: require("@/images/despensa/img2.jpg"),
         name: "Brownies corazón",
         code: "LM-DDB002",
         flex: 12,
@@ -23,7 +23,7 @@ const listProductsDespensaBar = [
     },
     {
         id: 4,
-        src: require("@/images/despensa/img4.png"),
+        src: require("@/images/despensa/img4.jpg"),
         name: "Caja con lazo de tela",
         code: "LM-DDB004",
         flex: 12,
@@ -51,21 +51,21 @@ const listProductsDespensaBar = [
     },
     {
         id: 8,
-        src: require("@/images/despensa/img8.png"),
+        src: require("@/images/despensa/img8.jpg"),
         name: "Macerados de pisco",
         code: "LM-DDB008",
         flex: 12,
     },
     {
         id: 9,
-        src: require("@/images/despensa/img9.png"),
+        src: require("@/images/despensa/img9.jpg"),
         name: "Bolsa pequeña con dulces e impresión",
         code: "LM-DDB009",
         flex: 12,
     },
     {
         id: 10,
-        src: require("@/images/despensa/img10.png"),
+        src: require("@/images/despensa/img10.jpg"),
         name: "Macerado de pisco",
         code: "LM-DDB010",
         flex: 12,

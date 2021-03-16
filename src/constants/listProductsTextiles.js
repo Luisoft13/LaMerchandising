@@ -50,21 +50,21 @@ const listProductsTextiles = [
       },
       {
         id: 8,
-        src: require("@/images/textiles/img8.png"),
+        src: require("@/images/textiles/img8.jpg"),
         code: "LM-T008",
         name: "Bolsa de algodón con estampado",
         flex: 12,
       },
       {
         id: 9,
-        src: require("@/images/textiles/img9.png"),
+        src: require("@/images/textiles/img9.jpg"),
         code: "LM-T009",
         name: "Polo algodón pima 100% con bordado",
         flex: 12,
       },
       {
         id: 10,
-        src: require("@/images/textiles/img10.png"),
+        src: require("@/images/textiles/img10.jpg"),
         code: "LM-T010",
         name: "chaleco en drill nuevo mundo con bordados",
         flex: 12,
@@ -93,7 +93,7 @@ const listProductsTextiles = [
       },
       {
         id: 14,
-        src: require("@/images/textiles/img14.png"),
+        src: require("@/images/textiles/img14.jpg"),
         code: "LM-T014",
         name: "Polo en algodón pique 100% con bordado",
         flex: 12,
@@ -107,7 +107,7 @@ const listProductsTextiles = [
       },
       {
         id: 16,
-        src: require("@/images/textiles/img16.png"),
+        src: require("@/images/textiles/img16.jpg"),
         code: "LM-T016",
         name: "Polos en algodón piqué y pima con bordado",
         flex: 12,
@@ -170,7 +170,7 @@ const listProductsTextiles = [
       },
       {
         id: 25,
-        src: require("@/images/textiles/img25.png"),
+        src: require("@/images/textiles/img25.jpg"),
         code: "LM-T025",
         name: "Bolsa reciclable con estampado",
         flex: 12,
@@ -219,7 +219,7 @@ const listProductsTextiles = [
       },
       {
         id: 32,
-        src: require("@/images/textiles/img32.png"),
+        src: require("@/images/textiles/img32.jpg"),
         code: "LM-T032",
         name: "Mochilas con bordados y bolsillo interno portalaptop",
         flex: 12,
@@ -317,7 +317,7 @@ const listProductsTextiles = [
       },
       {
         id: 46,
-        src: require("@/images/textiles/img46.png"),
+        src: require("@/images/textiles/img46.jpg"),
         code: "LM-T046",
         name: "Porta computadora o Tablet de telar",
         flex: 12,

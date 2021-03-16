@@ -43,7 +43,7 @@ const listOtrosProductos = [
       },
       {
         id: 7,
-        src: require("@/images/otrosproductos/img7.png"),
+        src: require("@/images/otrosproductos/img7.jpg"),
         code: "LM-TP007",
         name: "Mug de Fibra de Trigo",
         flex: 12,
@@ -212,7 +212,7 @@ const listOtrosProductos = [
       },
       {
         id: 31,
-        src: require("@/images/otrosproductos/img31.png"),
+        src: require("@/images/otrosproductos/img31.jpg"),
         code: "LM-TP031",
         name: "Vaso en acrílico",
         flex: 12,
@@ -233,28 +233,28 @@ const listOtrosProductos = [
       },
       {
         id: 34,
-        src: require("@/images/otrosproductos/img34.png"),
+        src: require("@/images/otrosproductos/img34.jpg"),
         code: "LM-TP034",
         name: "Porta tarjetas con filo de metal",
         flex: 12,
       },
       {
         id: 35,
-        src: require("@/images/otrosproductos/img35.png"),
+        src: require("@/images/otrosproductos/img35.jpg"),
         code: "LM-TP035",
         name: "Lapicero con impresión",
         flex: 12,
       },
       {
         id: 36,
-        src: require("@/images/otrosproductos/img36.png"),
+        src: require("@/images/otrosproductos/img36.jpg"),
         code: "LM-TP036",
         name: "Lápiz ecológico",
         flex: 12,
       },
       {
         id: 37,
-        src: require("@/images/otrosproductos/img37.png"),
+        src: require("@/images/otrosproductos/img37.jpg"),
         code: "LM-TP037",
         name: "Lapicero y resaltador con impresión",
         flex: 12,
@@ -275,7 +275,7 @@ const listOtrosProductos = [
       },
       {
         id: 40,
-        src: require("@/images/otrosproductos/img40.png"),
+        src: require("@/images/otrosproductos/img40.jpg"),
         code: "LM-TP040",
         name: "Imprenta y papelería",
         flex: 12,
@@ -352,7 +352,7 @@ const listOtrosProductos = [
       },
       {
         id: 51,
-        src: require("@/images/otrosproductos/img51.png"),
+        src: require("@/images/otrosproductos/img51.jpg"),
         code: "LM-TP051",
         name: "Libreta con hojas rayadas",
         flex: 12,
@@ -485,7 +485,7 @@ const listOtrosProductos = [
       },
       {
         id: 70,
-        src: require("@/images/otrosproductos/img70.png"),
+        src: require("@/images/otrosproductos/img70.jpg"),
         code: "LM-TP070",
         name: "Taza con impresión a un color",
         flex: 12,
@@ -668,7 +668,7 @@ const listOtrosProductos = [
       },
       {
         id: 96,
-        src: require("@/images/otrosproductos/img96.png"),
+        src: require("@/images/otrosproductos/img96.jpg"),
         code: "LM-TP096",
         name: "Cuadro de premiación",
         flex: 12,
@@ -696,7 +696,7 @@ const listOtrosProductos = [
       },
       {
         id: 100,
-        src: require("@/images/otrosproductos/img100.png"),
+        src: require("@/images/otrosproductos/img100.jpg"),
         code: "LM-TP100",
         name: "Botella de aluminio y colgador",
         flex: 12,
