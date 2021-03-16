@@ -74,17 +74,20 @@
     </div>
   </v-app>
   <Footer/>
+  <Whatsapp/>
 </div>
 </template>
 <script>
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import { listProductsTextiles } from "@/constants/listProductsTextiles.js"
+import Whatsapp from '@/components/Whatsapp.vue'
 
 export default {
     components: {
-        Header,
-        Footer
+      Header,
+      Footer,
+      Whatsapp
     },
   data() {
     return {

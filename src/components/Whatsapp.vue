@@ -43,9 +43,5 @@ export default {
     outline: none !important;
     border: none !important;
   }
-  @media screen and (max-width:625px) {
-    width: 60px;
-    height: 60px;
-  }
 }
 </style>
