@@ -24,15 +24,7 @@
             </li>
             <li>
               <v-icon>mdi-email</v-icon>
-              contacto@lamerchandising.com
-            </li>
-            <li>
-              <v-icon>mdi-email</v-icon>
               rguilfo@lamerchandising.com
-            </li>
-            <li>
-              <v-icon>mdi-email</v-icon>
-              ryepez@lamerchandising.com
             </li>
             <li>
               <v-icon>mdi-google-maps</v-icon>
