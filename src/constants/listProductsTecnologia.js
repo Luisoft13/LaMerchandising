@@ -136,7 +136,7 @@ const listProductsTecnologia = [
     {
         id: 20,
         src: require("@/images/tecnologia/img20.png"),
-        name: "usb de madera con llavero",
+        name: "USB de madera con llavero",
         code: "LM-TEC020",
         flex: 12,
     },
