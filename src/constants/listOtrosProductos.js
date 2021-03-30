@@ -347,7 +347,7 @@ const listOtrosProductos = [
         id: 50,
         src: require("@/images/otrosproductos/img50.png"),
         code: "LM-TP050",
-        name: "Vasos en vidrio y acrílico con impresión no estampado",
+        name: "Vasos en vidrio y acrílico con impresión",
         flex: 12,
       },
       {
