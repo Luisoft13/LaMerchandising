@@ -1,14 +1,16 @@
 <template>
 <div class="heroBlock">
-  <v-carousel :show-arrows="false" cycle hide-delimiters height="auto">
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      reverse-transition="fade-transition"
-    >
-      <v-img :src="item.src"></v-img>
-    </v-carousel-item>
-  </v-carousel>
+  <v-app>
+    <v-carousel :show-arrows="true" cycle hide-delimiters height="auto">
+      <v-carousel-item
+        v-for="(item,i) in items"
+        :key="i"
+        reverse-transition="fade-transition"
+      >
+        <v-img :src="item.src"></v-img>
+      </v-carousel-item>
+    </v-carousel>
+  </v-app>
 </div>
 </template>
 <script>

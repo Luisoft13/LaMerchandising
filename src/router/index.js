@@ -48,6 +48,11 @@ const routes = [
     name: 'seguridad-higiene',
     component: () => import("@/pages/ProductsSeguridadPage.vue")
   },
+  {
+    path: '/regalos',
+    name: 'regalos',
+    component: () => import("@/pages/ProductsRelagosPage.vue")
+  },
 ]
 
 const router = new VueRouter({

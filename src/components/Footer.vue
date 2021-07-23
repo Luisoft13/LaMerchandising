@@ -81,6 +81,15 @@
                 Seguridad e Higiene
               </router-link>
             </li>
+            <li>
+              <v-icon>mdi-chevron-right</v-icon>
+              <router-link
+                to="regalos"
+                style="text-decoration:none; color: white"
+              >
+                Regalos
+              </router-link>
+            </li>
           </ul>
         </v-col>
         <v-col class="content_col_footer" cols="12" sm="4">

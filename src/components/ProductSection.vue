@@ -70,6 +70,13 @@ export default {
           to: "seguridad-higiene",
           flex: 12,
         },
+        {
+          id: 5,
+          src: require("@/images/ProductSection/img5.png"),
+          title: 'Regalos',
+          to: "regalos",
+          flex: 12,
+        },
       ]
     };
   }

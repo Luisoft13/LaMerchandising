@@ -143,6 +143,13 @@ export default {
         title: "Seguridad e higiene",
         active: false,
       },
+      {
+        icon: require('@/images/icons/gift-box.png'),
+        text: "Nosotros",
+        to:"regalos",
+        title: "Regalos",
+        active: false,
+      },
     ]
   }),
 };
