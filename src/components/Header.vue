@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-app-bar class="content-app-bar" dense flat absolute v-if="$vuetify.breakpoint.mdOnly || $vuetify.breakpoint.smOnly || $vuetify.breakpoint.lgOnly">
+        <v-app-bar class="content-app-bar" dense flat absolute v-if="!$vuetify.breakpoint.xsOnly">
         <v-toolbar flat class="mainHeader">
             <v-img
               :src="require('@/images/icons/logo.png')"
@@ -32,7 +32,7 @@
             </v-toolbar-items>
         </v-toolbar>
         </v-app-bar>
-        <v-app-bar class="content-app-bar" flat dense v-if="$vuetify.breakpoint.xsOnly">
+        <v-app-bar class="content-app-bar" flat dense v-else>
           <v-img
             :src="require('@/images/icons/logo.png')"
             alt="RTS ENVIRONMENTAL SERVICES, INC."
