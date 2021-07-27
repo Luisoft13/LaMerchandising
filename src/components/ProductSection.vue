@@ -12,7 +12,7 @@
             <v-img
               :src="card.src"
               class="content_images"
-              height="300px"
+              height="350px"
             >
             </v-img>
             <v-card-title class="content_images_title" v-text="card.title"></v-card-title>
@@ -72,7 +72,7 @@ export default {
         },
         {
           id: 5,
-          src: require("@/images/ProductSection/img5.png"),
+          src: require("@/images/ProductSection/img6.jpg"),
           title: 'Regalos',
           to: "regalos",
           flex: 12,

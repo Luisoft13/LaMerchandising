@@ -7,7 +7,7 @@
         <h1 class="content_portada__title_h1">Regalos</h1>
       </div>
       <v-img
-        :src="require('@/images/ProductSection/img42.png')"
+        :src="require('@/images/ProductSection/img62.gif')"
         class="content_portada__img"
         height="300px"
         max-width="500px"
@@ -19,7 +19,7 @@
         <span class="content_presentation__text">
           Personaliza tu box para una sorpresa espectacular.
           Creemos juntos un regalo especial, armalo con tus productos
-          favoritos, útiles de escritorio,libros, ropa, calzados, vinos, etc.
+          favoritos, útiles de escritorio, libros, ropa, calzados, vinos, etc.
           Además contamos con la edición limitada del artista plástico José Carlos Tassara C.
         </span>
       </div>

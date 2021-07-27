@@ -19,6 +19,9 @@
       return {
         items: [
           {
+            src: require('@/images/icons/slider4.jpg'),
+          },
+          {
             src: require('@/images/icons/slider1.png'),
           },
           {
