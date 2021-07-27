@@ -73,7 +73,7 @@ export default {
         {
           id: 5,
           src: require("@/images/ProductSection/img6.jpg"),
-          title: 'Regalos',
+          title: 'Regalos personalizados',
           to: "regalos",
           flex: 12,
         },

@@ -4,7 +4,7 @@
   <v-app class="content_app">
     <div class="content_portada">
       <div class="content_portada__title">
-        <h1 class="content_portada__title_h1">Regalos</h1>
+        <h1 class="content_portada__title_h1">Regalos Personalizados</h1>
       </div>
       <v-img
         :src="require('@/images/ProductSection/img62.gif')"
