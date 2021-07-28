@@ -87,7 +87,7 @@
                 to="regalos"
                 style="text-decoration:none; color: white"
               >
-                Regalos
+                Regalos personalizados
               </router-link>
             </li>
           </ul>

@@ -147,7 +147,7 @@ export default {
         icon: require('@/images/icons/gift-box.png'),
         text: "Nosotros",
         to:"regalos",
-        title: "Regalos",
+        title: "Regalos personalizados",
         active: false,
       },
     ]

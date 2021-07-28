@@ -15,7 +15,7 @@
               height="350px"
             >
             </v-img>
-            <v-card-title class="content_images_title" v-text="card.title"></v-card-title>
+            <div class="content_images_title pb-3 pt-3" v-text="card.title"></div>
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn color="#00677f" dark>
@@ -101,6 +101,8 @@ export default {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
+  padding-bottom:15px;
+  padding-top:15px
 }
 .content_images_btn {
   color: white !important;
