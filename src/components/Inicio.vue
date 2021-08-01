@@ -28,7 +28,7 @@
             src: require('@/images/icons/slider2.png'),
           },
           {
-            src: require('@/images/icons/slider3.png'),
+            src: require('@/images/icons/slider3.jpg'),
           },
         ],
       }
