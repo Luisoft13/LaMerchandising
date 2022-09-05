@@ -202,10 +202,11 @@ export default {
   }
 }
 .content_list_group {
-  margin-top: auto;
-  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
 }
 .content_list_item {
+  height: 100%;
   padding-right: 0px !important;
 }
 .content_list_group_items {
