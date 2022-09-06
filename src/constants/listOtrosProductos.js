@@ -43,9 +43,9 @@ const listOtrosProductos = [
   },
   {
     id: 7,
-    src: require("@/images/otrosproductos/img1.png"),
-    name: "Mug de Fibra de Trigo",
-    code: "LM-TP001",
+    src: require("@/images/otrosproductos/img113.jpeg"),
+    name: "Bolso transparente con impresión",
+    code: "LM-TP113",
     flex: 12,
   },
   {
