@@ -132,8 +132,8 @@ export default {
       {
         icon: require('@/images/icons/school-supplies.png'),
         text: "Nosotros",
-        to:"otros-productos",
-        title: "Otros Productos",
+        to:"productos",
+        title: "Productos",
         active: false,
       },
       {

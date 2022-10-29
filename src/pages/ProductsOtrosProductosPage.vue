@@ -4,7 +4,7 @@
   <v-app class="content_app">
     <div class="content_portada">
       <div class="content_portada__title">
-        <h1 class="content_portada__title_h1">Otros productos</h1>
+        <h1 class="content_portada__title_h1">Productos</h1>
       </div>
       <v-img
         :src="require('@/images/ProductSection/img2.png')"
@@ -99,7 +99,7 @@ export default {
   metaInfo () {
         return {
             title: "La Merchandising",
-            titleTemplate: `%s | Otros Productos`,
+            titleTemplate: `%s | Productos`,
             link: [
                 {
                     rel: 'icon',

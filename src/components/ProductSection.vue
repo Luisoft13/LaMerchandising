@@ -45,8 +45,8 @@ export default {
         {
           id: 2,
           src: require("@/images/ProductSection/img2.png"),
-          title: 'Otros Productos',
-          to: "otros-productos",
+          title: 'Productos',
+          to: "productos",
           flex: 12,
         },
         {
@@ -96,7 +96,7 @@ export default {
 .content_images {
   background-color:rgb(215, 215, 215);
 }
-.content_images_title { 
+.content_images_title {
   color:rgba(242, 38, 19, 1);
   font-size: 20px;
   text-transform: uppercase;

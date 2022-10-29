@@ -48,10 +48,10 @@
             <li>
               <v-icon>mdi-chevron-right</v-icon>
               <router-link
-                to="otros-productos"
+                to="productos"
                 style="text-decoration:none; color: white"
               >
-                Otros Productos
+                Productos
               </router-link>
             </li>
             <li>
@@ -154,7 +154,7 @@
 .content_list_ul {
   list-style: none;
   text-align: left;
-  @media screen and (max-width:625px){ 
+  @media screen and (max-width:625px){
     text-align: center;
   }
   li {
