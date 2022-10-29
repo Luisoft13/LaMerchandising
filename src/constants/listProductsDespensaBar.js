@@ -31,7 +31,7 @@ const listProductsDespensaBar = [
     {
         id: 5,
         src: require("@/images/despensa/img5.png"),
-        name: "Portabella en bio-cuero",
+        name: "Porta botella en bio-cuero",
         code: "LM-DDB005",
         flex: 12,
     },
@@ -78,5 +78,5 @@ const listProductsDespensaBar = [
         flex: 12,
     },
   ]
-  
+
   export { listProductsDespensaBar }

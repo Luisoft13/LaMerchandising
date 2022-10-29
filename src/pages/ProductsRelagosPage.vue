@@ -41,7 +41,13 @@
               <v-card class="content_card">
                 <v-img :src="card.src" class="content_images">
                 </v-img>
-                <div class="d-flex content_title_and_subtitle">
+                <div class="d-flex content_title_and_subtitle px-2">
+                  <h3
+                    height="50px"
+                    class="title_images"
+                    v-text="card.name"
+                  >
+                  </h3>
                   <h4
                     class="subtitle_images"
                     height="15px"
@@ -55,7 +61,7 @@
         </template>
 
         <v-card>
-          <v-app-bar flat class="content_app_bar">
+          <v-app-bar flat class="content_app_bar" height="48">
             <v-spacer></v-spacer>
             <v-icon
               color="white"
@@ -66,6 +72,7 @@
           </v-app-bar>
           <v-card-text class="pt-4">
             <v-img :src="imageModal"> </v-img>
+            <div class="font-weight-bold py-3" style="font-size:24px; line-height: 24px;">{{imageName}}</div>
             <v-card-title class="justify-center subtitle_images_modal">{{imageCode}}</v-card-title>
           </v-card-text>
 
@@ -134,6 +141,7 @@ export default {
 </style>
 <style lang="scss" scoped>
 .content_app_bar {
+  height: 100%;
   background-color:rgb(0, 103, 127) !important;
 }
 .content_app {
@@ -169,6 +177,7 @@ export default {
   padding: 4px;
 }
 .content_app_bar_title {
+  height: 100%;
   color:white;
   font-size:25px;
   @media screen and (max-width:625px) {
