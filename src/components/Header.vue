@@ -109,11 +109,11 @@ export default {
     ],
     products: [
       {
-        icon: require('@/images/icons/print.png'),
-        text: "Inicio",
-        to:"tecnologia",
-        title: "Tecnología",
-        active: true,
+        icon: require('@/images/icons/school-supplies.png'),
+        text: "Nosotros",
+        to:"productos",
+        title: "Productos",
+        active: false,
       },
       {
         icon: require('@/images/icons/shirt.png'),
@@ -123,18 +123,11 @@ export default {
         active: false,
       },
       {
-        icon: require('@/images/icons/candy-shop.png'),
+        icon: require('@/images/icons/print.png'),
         text: "Inicio",
-        to:"dulces-despensa-bar",
-        title: "Dulces y Despensa Bar",
+        to:"tecnologia",
+        title: "Tecnología",
         active: true,
-      },
-      {
-        icon: require('@/images/icons/school-supplies.png'),
-        text: "Nosotros",
-        to:"productos",
-        title: "Productos",
-        active: false,
       },
       {
         icon: require('@/images/icons/cleaning.png'),
@@ -150,6 +143,13 @@ export default {
         title: "Regalos personalizados",
         active: false,
       },
+      {
+        icon: require('@/images/icons/candy-shop.png'),
+        text: "Inicio",
+        to:"dulces-despensa-bar",
+        title: "Dulces y Despensa Bar",
+        active: true,
+      }
     ]
   }),
 };
