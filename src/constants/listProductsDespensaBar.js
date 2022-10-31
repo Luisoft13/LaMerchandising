@@ -52,7 +52,7 @@ const listProductsDespensaBar = [
     {
         id: 8,
         src: require("@/images/despensa/img8.jpg"),
-        name: "Macerados de pisco",
+        name: "Macerado de pisco de diferentes sabores",
         code: "LM-DDB008",
         flex: 12,
     },
