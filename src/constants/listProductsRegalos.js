@@ -38,7 +38,7 @@ const listProductsRegalos = [
   {
     id: 6,
     src: require("@/images/regalos/img6.jpg"),
-    name: 'Caja de regalo con botella de vino y más regalos',
+    name: 'Caja de regalo con frutos secos y planta y más regalos',
     code: "LM-R006",
     flex: 12,
   },
@@ -66,7 +66,7 @@ const listProductsRegalos = [
   {
     id: 10,
     src: require("@/images/regalos/img10.jpg"),
-    name: 'Caja de regalo con chalinea de baby alpaca y más regalos',
+    name: 'Caja de regalo con chalina de baby alpaca y más regalos',
     code: "LM-R0010",
     flex: 12,
   },
@@ -86,19 +86,22 @@ const listProductsRegalos = [
   },
   {
     id: 13,
-    src: require("@/images/regalos/img13.jpg"),
+    src: require("@/images/regalos/img15.jpg"),
+    name: 'Caja de regalo con chalina 100% alpaca y más regalos',
     code: "LM-R0013",
     flex: 12,
   },
   {
     id: 14,
     src: require("@/images/regalos/img14.jpg"),
+    name: 'Caja de regalo cerrada con cinta y un ramo de flores',
     code: "LM-R0014",
     flex: 12,
   },
   {
     id: 15,
-    src: require("@/images/regalos/img15.jpg"),
+    src: require("@/images/regalos/img13.jpg"),
+    name: 'Caja de regalo cerrada con cinta y dos ramos de flores',
     code: "LM-R0015",
     flex: 12,
   },
