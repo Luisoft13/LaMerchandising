@@ -1,5 +1,12 @@
 const listOtrosProductos = [
   {
+    id: 0,
+    src: require("@/images/otrosproductos/img116.png"),
+    name: "Tomatodo con doble  impresión delantero y posterior",
+    code: "LM-TP115",
+    flex: 12,
+  },
+  {
     id: 1,
     src: require("@/images/otrosproductos/img113.jpeg"),
     name: "Bolsa con impresión y bordes y asas de tela",

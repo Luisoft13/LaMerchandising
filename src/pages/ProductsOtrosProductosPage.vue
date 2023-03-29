@@ -15,61 +15,12 @@
       </v-img>
     </div>
     <div class="text-center content_products_inicio">
-      <v-dialog v-model="dialog" width="500">
-        <template v-slot:activator="{ on, attrs }">
-          <v-row>
-            <v-col
-              v-for="card in listOtrosProductos"
-              :key="card.code"
-              :cols="card.flex"
-              sm="3"
-              v-bind="attrs"
-              v-on="on"
-              align-self="end"
-              @click="showModal(card)"
-            >
-              <v-card class="content_card">
-                <v-img :src="card.src" class="content_images">
-                </v-img>
-                <div class="d-flex content_title_and_subtitle px-2">
-                  <h3
-                    height="50px"
-                    class="title_images text-truncate-3-line"
-                    v-text="card.name"
-                  >
-                  </h3>
-                  <h4
-                    class="subtitle_images"
-                    height="15px"
-                    v-text="card.code"
-                  >
-                  </h4>
-                </div>
-              </v-card>
-            </v-col>
-          </v-row>
-        </template>
-
-        <v-card>
-          <v-app-bar flat class="content_app_bar" height="48">
-            <v-spacer></v-spacer>
-            <v-icon
-              color="white"
-              @click="dialog = false"
-            >
-              mdi-close
-            </v-icon>
-          </v-app-bar>
-          <v-card-text class="pt-4">
-            <v-img :src="imageModal"> </v-img>
-            <div class="font-weight-bold py-3" style="font-size:24px; line-height: 24px;">{{imageName}}</div>
-            <v-card-title class="justify-center subtitle_images_modal">{{imageCode}}</v-card-title>
-          </v-card-text>
-
-          <v-divider></v-divider>
-        </v-card>
-      </v-dialog>
+      <ProductList
+        :products="listOtrosProductos"
+        @click="handleShowModal($event)"
+      />
     </div>
+    <ProductModal :product="product" v-model="showModal"/>
   </v-app>
   <Footer/>
   <Whatsapp/>
@@ -80,53 +31,48 @@ import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import { listOtrosProductos } from "@/constants/listOtrosProductos.js";
 import Whatsapp from '@/components/Whatsapp.vue'
+import ProductList from '@/components/ProductList.vue'
 
 export default {
-    components: {
-        Header,
-        Footer,
-        Whatsapp
-    },
+  components: {
+    Header,
+    Footer,
+    Whatsapp,
+    ProductList,
+    ProductModal: () => import('@/components/ProductModal.vue')
+  },
   data() {
     return {
-      dialog: false,
-      imageModal: '',
-      imageCode: '',
-      imageName: '',
-      listOtrosProductos: []
+      showModal: false,
+      listOtrosProductos: [],
+      product: null
     };
   },
   metaInfo () {
-        return {
-            title: "La Merchandising",
-            titleTemplate: `%s | Productos`,
-            link: [
-                {
-                    rel: 'icon',
-                    type: 'image/png',
-                    href: "./logo.png"
-                }
-            ]
+    return {
+      title: "La Merchandising",
+      titleTemplate: `%s | Productos`,
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/png',
+          href: "./logo.png"
         }
-    },
+      ]
+    }
+  },
   created() {
     this.listOtrosProductos = listOtrosProductos
   },
   methods: {
-    showModal(card) {
-      this.imageModal = card.src,
-      this.imageCode = card.code,
-      this.imageName = card.name,
-      this.dialog = true
+    handleShowModal(product) {
+      this.product = product
+      this.showModal = true
     }
   },
 };
 </script>
 <style lang="scss" scoped>
-.content_app_bar {
-  height: 100%;
-  background-color:rgb(0, 103, 127) !important;
-}
 .content_app {
   min-height: 100% !important;
   background: #f3f3f3;
@@ -136,48 +82,11 @@ export default {
     margin-top: 0px;
   }
 }
-.content_card {
-  height: auto !important;
-}
 .content_products_inicio {
   padding-top: 30px;
   margin-left:30px;
   margin-right: 30px;
   margin-bottom: 30px;
-}
-.title_images {
-  justify-content: center;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #444;
-}
-.subtitle_images {
-  color: #9d2560;
-}
-.subtitle_images_modal {
-  color: #9d2560;
-  padding: 4px;
-}
-.content_app_bar_title {
-  height: 100%;
-  color:white;
-  font-size:25px;
-  @media screen and (max-width:625px) {
-    margin-left: 10px;
-    font-size:20px;
-  }
-}
-.content_title_and_subtitle {
-  flex-direction: column;
-  height: 125px;;
-  justify-content: flex-end;
-}
-.content_images {
-  height: auto;
-}
-.content_img_modal {
-  height: 350px;
 }
 .content_portada {
   background-color:rgb(0, 103, 127);
@@ -202,14 +111,5 @@ export default {
       margin-top: 10px;
     }
   }
-}
-.text-truncate-3-line {
-  display: block;
-  display: -webkit-box;
-  width: 100%;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden !important;
-  text-overflow: ellipsis;
 }
 </style>

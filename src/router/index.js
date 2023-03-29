@@ -56,8 +56,23 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode:"",
-  routes
+  mode: '',
+  routes,
+  scrollBehavior (to) {
+    if (to.hash) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve({
+            selector: to.hash,
+            offset: { x: 0, y: 0 },
+            behavior: 'smooth'
+          })
+        }, 2000)
+      })
+    }
+
+    return { x: 0, y: 0 }
+  }
 })
 
 export default router

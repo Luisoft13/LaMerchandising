@@ -12,7 +12,7 @@
             <v-img
               :src="card.src"
               class="content_images"
-              height="350px"
+              height="350"
             >
             </v-img>
             <div class="content_images_title pb-3 pt-3" v-text="card.title"></div>
