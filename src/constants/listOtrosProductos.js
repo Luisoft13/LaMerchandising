@@ -2,7 +2,7 @@ const listOtrosProductos = [
   {
     id: 0,
     src: require("@/images/otrosproductos/img116.png"),
-    name: "Tomatodo con doble  impresión delantero y posterior",
+    name: "Tomatodo liviano con doble impresión delantero, posterior",
     code: "LM-TP115",
     flex: 12,
   },
