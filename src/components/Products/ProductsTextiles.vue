@@ -1,72 +1,26 @@
 <template>
   <v-app class="content_app">
     <div class="text-center content_products_inicio">
-      <v-dialog v-model="dialog" width="500">
-        <template v-slot:activator="{ on, attrs }">
-          <v-row>
-            <v-col
-              v-for="card in listProductTextiles"
-              :key="card.code"
-              :cols="card.flex"
-              sm="3"
-              v-bind="attrs"
-              v-on="on"
-              align-self="end"
-              @click="showModal(card)"
-            >
-              <v-card class="content_card">
-                <v-img :src="card.src" class="content_images">
-                </v-img>
-                <div class="d-flex content_title_and_subtitle px-2">
-                  <h3
-                    height="50px"
-                    class="title_images"
-                    v-text="card.name"
-                  >
-                  </h3>
-                  <h4
-                    class="subtitle_images"
-                    height="15px"
-                    v-text="card.code"
-                  >
-                  </h4>
-                </div>
-              </v-card>
-            </v-col>
-          </v-row>
-        </template>
-
-        <v-card>
-          <v-app-bar class="content_app_bar" dense height="40">
-            <v-spacer></v-spacer>
-            <v-icon
-              color="white"
-              @click="dialog = false"
-            >
-              mdi-close
-            </v-icon>
-          </v-app-bar>
-          <v-card-text class="pt-4">
-            <v-img :src="imageModal"> </v-img>
-            <div class="font-weight-bold py-3" style="font-size:24px; line-height: 24px;">{{imageName}}</div>
-            <v-card-title class="justify-center subtitle_images_modal">{{imageCode}}</v-card-title>
-          </v-card-text>
-
-          <v-divider></v-divider>
-        </v-card>
-      </v-dialog>
+      <ProductList
+        :products="listProductTextiles"
+        @click="handleShowModal($event)"
+      />
     </div>
+    <ProductModal :product="product" v-model="showModal" />
   </v-app>
 </template>
 <script>
 import { listProductsTextiles } from "@/constants/listProductsTextiles.js"
+import ProductList from "@/components/ProductList.vue";
+
 export default {
+  components: {
+    ProductList,
+    ProductModal: () => import("@/components/ProductModal.vue")
+  },
   data() {
     return {
-      dialog: false,
-      imageModal: '',
-      imageCode: '',
-      imageName: '',
+      showModal: false,
       listProductTextiles: []
     };
   },
@@ -74,11 +28,9 @@ export default {
     this.listProductTextiles = listProductsTextiles
   },
   methods: {
-    showModal(card) {
-      this.imageModal = card.src,
-      this.imageCode = card.code,
-      this.imageName = card.name,
-      this.dialog = true
+    handleShowModal(product) {
+      this.product = product;
+      this.showModal = true;
     },
   },
 };

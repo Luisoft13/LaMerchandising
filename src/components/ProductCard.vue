@@ -1,11 +1,12 @@
 <template>
   <v-card class="mx-auto" @click="$emit('click')">
     <v-img
+      style="min-height: 300px"
       class="align-end text-white"
       height="300"
+      max-height="300"
       :src="product.src"
-    >
-    </v-img>
+    />
 
     <!--<v-card-subtitle class="pt-4"> Number 10 </v-card-subtitle>-->
 

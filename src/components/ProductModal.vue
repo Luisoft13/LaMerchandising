@@ -5,7 +5,7 @@
         <v-spacer></v-spacer>
         <v-icon color="white" @click="showModal = false"> mdi-close </v-icon>
       </v-app-bar>
-      <v-card-text class="pt-4 fill-height">
+      <v-card-text class="pt-4 fill-height mx-auto">
         <v-img :src="productImageSrc" max-width="360" max-height="360"/>
         <div
           class="font-weight-bold py-3"
