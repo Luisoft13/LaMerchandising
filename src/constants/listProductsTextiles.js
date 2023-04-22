@@ -2,7 +2,7 @@ const listProductsTextiles = [
   {
     id: 1,
     src: require("@/images/textiles/img48.jpeg"),
-    name: "Bolsas 100% algodón. grande y pequeña con diferente cerrado y grosor para su comodidad",
+    name: "Bolsas 100% algodón grande y pequeña con diferente cerrado y grosor para su comodidad",
     code: "LM-T001",
     flex: 12,
   },
