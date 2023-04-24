@@ -1,5 +1,5 @@
 <template>
-  <div class="content_product_section">
+  <v-container fluid>
       <h1 class="text-center content_title_products">Mis productos</h1>
       <v-row style="justify-content:center">
         <v-col
@@ -26,7 +26,7 @@
           </v-card>
         </v-col>
       </v-row>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -91,6 +91,7 @@ export default {
 }
 .content_title_products {
   text-transform: uppercase;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .content_images {

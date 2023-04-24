@@ -1,6 +1,5 @@
 <template>
-<div class="heroBlock">
-  <v-app>
+  <div class="heroBlock">
     <v-carousel :show-arrows="true" cycle hide-delimiters height="auto">
       <v-carousel-item
         v-for="(item,i) in items"
@@ -10,8 +9,7 @@
         <v-img :src="item.src"></v-img>
       </v-carousel-item>
     </v-carousel>
-  </v-app>
-</div>
+  </div>
 </template>
 <script>
   export default {

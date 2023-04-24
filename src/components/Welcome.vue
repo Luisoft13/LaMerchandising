@@ -1,5 +1,5 @@
 <template>
-    <v-container class="content_welcome">
+    <v-container fluid class="content_welcome">
         <v-row>
             <v-col cols="12" sm="6">
                 <h1 class="title_welcome">
@@ -34,7 +34,7 @@
 </template>
 <script>
 export default {
-    
+
 }
 </script>
 <style lang="scss" scoped>
@@ -46,7 +46,7 @@ export default {
     padding-bottom: 15px;
     @media screen and (max-width:625px) {
         font-size: 40px;
-        
+
     }
 }
 .subtitle_welcome {
@@ -57,7 +57,7 @@ export default {
 }
 .content_image {
     @media screen and (max-width:625px) {
-        display: none;    
+        display: none;
     }
 }
 </style>

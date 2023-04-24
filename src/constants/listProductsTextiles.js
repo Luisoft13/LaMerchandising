@@ -8,9 +8,9 @@ const listProductsTextiles = [
   },
   {
     id: 2,
-    src: require("@/images/textiles/img49.png"),
+    src: require("@/images/textiles/img1.png"),
+    name: "Mochila ecólogica en algodon y yute",
     code: "LM-T002",
-    name: "Lápices ecológicos con semillas",
     flex: 12,
   },
   {
@@ -335,14 +335,7 @@ const listProductsTextiles = [
     code: "LM-T047",
     name: "Gorro con bordado",
     flex: 12,
-  },
-  {
-    id: 48,
-    src: require("@/images/textiles/img1.png"),
-    name: "Mochila ecólogica en algodon y yute",
-    code: "LM-T048",
-    flex: 12,
-  },
+  }
 ]
 
 export { listProductsTextiles }

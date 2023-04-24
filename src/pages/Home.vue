@@ -3,7 +3,6 @@
         <Header/>
         <Inicio/>
         <ProductSection/>
-        <ProductTextiles/>
         <Welcome/>
         <Footer/>
         <Whatsapp/>
@@ -14,7 +13,6 @@
 import Header from '@/components/Header';
 import Inicio from '@/components/Inicio';
 import ProductSection from '@/components/ProductSection.vue'
-import ProductTextiles from '@/components/Products/ProductsTextiles.vue'
 import Welcome from '@/components/Welcome.vue'
 import Footer from '@/components/Footer.vue'
 import Whatsapp from '@/components/Whatsapp.vue'
@@ -27,7 +25,6 @@ export default {
     Header,
     Inicio,
     ProductSection,
-    ProductTextiles,
     Welcome,
     Footer,
     Whatsapp
