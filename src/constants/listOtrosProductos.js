@@ -1,5 +1,40 @@
 const listOtrosProductos = [
   {
+    id: 115,
+    src: require("@/images/otrosproductos/img116.png"),
+    name: "Tomatodo liviano con doble impresión delantero, posterior",
+    code: "LM-TP115",
+    flex: 12,
+  },
+  {
+    id: 116,
+    src: require("@/images/otrosproductos/img113.jpeg"),
+    name: "Bolsa con impresión y bordes y asas de tela",
+    code: "LM-TP116",
+    flex: 12,
+  },
+  {
+    id: 117,
+    src: require("@/images/otrosproductos/img114.jpeg"),
+    name: "Mochila de poliester con portalaptop",
+    code: "LM-TP117",
+    flex: 12,
+  },
+  {
+    id: 118,
+    src: require("@/images/otrosproductos/img117.jpeg"),
+    name: "Copas, vasos y envase con tapa con nombre",
+    code: "LM-TP118",
+    flex: 12,
+  },
+  {
+    id: 118,
+    src: require("@/images/otrosproductos/img118.jpeg"),
+    name: "Portacollares para tenerlo exhibido y en orden",
+    code: "LM-TP119",
+    flex: 12,
+  },
+  {
     id: 1,
     src: require("@/images/textiles/img48.jpeg"),
     name: "Bolsas 100% algodón grande y pequeña con diferente cerrado y grosor para su comodidad",
@@ -797,27 +832,6 @@ const listOtrosProductos = [
     src: require("@/images/otrosproductos/img29.png"),
     code: "LM-TP114",
     name: "Libreta biodegradable",
-    flex: 12,
-  },
-  {
-    id: 115,
-    src: require("@/images/otrosproductos/img116.png"),
-    name: "Tomatodo liviano con doble impresión delantero, posterior",
-    code: "LM-TP115",
-    flex: 12,
-  },
-  {
-    id: 116,
-    src: require("@/images/otrosproductos/img113.jpeg"),
-    name: "Bolsa con impresión y bordes y asas de tela",
-    code: "LM-TP116",
-    flex: 12,
-  },
-  {
-    id: 117,
-    src: require("@/images/otrosproductos/img114.jpeg"),
-    name: "Mochila de poliester con portalaptop",
-    code: "LM-TP117",
     flex: 12,
   },
   /*{

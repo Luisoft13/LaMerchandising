@@ -1,25 +1,14 @@
 <template>
-  <v-card class="mx-auto" @click="$emit('click')">
-    <v-img
-      style="min-height: 300px"
-      class="align-end text-white"
-      height="300"
-      max-height="300"
+  <v-card class="mx-auto" @click="$emit('click')" style="width:100%">
+    <img
+      class="product-card__image"
+      loading="lazy"
       :src="product.src"
     />
-
-    <!--<v-card-subtitle class="pt-4"> Number 10 </v-card-subtitle>-->
-
     <v-card-text class="text-center">
       <div class="product-card__name text-truncate-3-line font-weight-bold pb-1">{{product.name}}</div>
       <span class="product-card__code font-weight-medium">{{product.code}}</span>
     </v-card-text>
-
-    <!--<v-card-actions>
-      <v-btn color="orange"> Share </v-btn>
-
-      <v-btn color="orange"> Explore </v-btn>
-    </v-card-actions>-->
   </v-card>
 </template>
 
@@ -33,6 +22,12 @@ export default {
 
 <style lang="scss" scoped>
 .product-card {
+  &__image {
+    width: 100%;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px
+  }
   &__name {
     color: #444;
     font-size: 18px;
