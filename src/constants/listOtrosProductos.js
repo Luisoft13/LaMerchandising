@@ -23,14 +23,14 @@ const listOtrosProductos = [
   {
     id: 118,
     src: require("@/images/otrosproductos/img117.jpeg"),
-    name: "Copas, vasos y envase con tapa con nombre",
+    name: "Portacollares para tenerlo exhibido y en orden",
     code: "LM-TP118",
     flex: 12,
   },
   {
     id: 118,
     src: require("@/images/otrosproductos/img118.jpeg"),
-    name: "Portacollares para tenerlo exhibido y en orden",
+    name: "Copas, vasos y envase con tapa con nombre",
     code: "LM-TP119",
     flex: 12,
   },
