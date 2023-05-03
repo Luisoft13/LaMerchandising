@@ -11,24 +11,7 @@
             <v-toolbar-items>
             <v-btn text to="home">Inicio</v-btn>
             <v-btn text to="nosotros" exact-path>Nosotros</v-btn>
-            <v-list-group class="content_list_group" :value="false">
-              <template v-slot:activator>
-                <v-list-item class="content_list_item">
-                  <!--<v-list-item-action>
-                        <v-icon>mdi-home</v-icon>
-                    </v-list-item-action>-->
-                  <v-btn width="100%" text>Productos</v-btn>
-                </v-list-item>
-              </template>
-
-              <v-list-item class="content_list_group_items" absolute v-for="(item, i) in products" :key="i" link :to="item.to">
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
-
-                <v-list-item-icon>
-                  <v-img width="25px" :src="item.icon"></v-img>
-                </v-list-item-icon>
-              </v-list-item>
-            </v-list-group>
+            <v-btn text to="productos" exact-path>Productos</v-btn>
             </v-toolbar-items>
         </v-toolbar>
         </v-app-bar>
@@ -53,33 +36,12 @@
           </v-app-bar>
           <v-list>
             <v-list-item link v-for="(item, index) in nav" :key="index" :to="item.to">
-              <!--<v-list-item-action>
-                    <v-icon v-if="item.icon">{{ item.icon }}</v-icon>
-                </v-list-item-action>-->
               <v-list-item-content>
                 <v-list-item-title :title="item.title">{{
                   item.text
                 }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-            <v-list-group :value="false">
-              <template v-slot:activator>
-                <v-list-item class="content_list_item">
-                  <!--<v-list-item-action>
-                        <v-icon>mdi-home</v-icon>
-                        </v-list-item-action>-->
-                  <v-list-item-title>Productos</v-list-item-title>
-                </v-list-item>
-              </template>
-
-              <v-list-item v-for="(item, i) in products" :key="i" link :to="item.to">
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
-
-                <v-list-item-icon>
-                  <v-img width="25px" :src="item.icon"></v-img>
-                </v-list-item-icon>
-              </v-list-item>
-            </v-list-group>
           </v-list>
         </v-navigation-drawer>
     </div>
@@ -106,51 +68,14 @@ export default {
         title: "About this demo",
         active: false,
       },
-    ],
-    products: [
       {
         icon: require('@/images/icons/school-supplies.png'),
-        text: "Nosotros",
+        text: "Productos",
         to:"productos",
         title: "Productos",
         active: false,
       },
-      {
-        icon: require('@/images/icons/shirt.png'),
-        text: "Nosotros",
-        to:"textiles",
-        title: "Textiles",
-        active: false,
-      },
-      {
-        icon: require('@/images/icons/print.png'),
-        text: "Inicio",
-        to:"tecnologia",
-        title: "Tecnología",
-        active: true,
-      },
-      {
-        icon: require('@/images/icons/cleaning.png'),
-        text: "Nosotros",
-        to:"seguridad-higiene",
-        title: "Seguridad e higiene",
-        active: false,
-      },
-      {
-        icon: require('@/images/icons/gift-box.png'),
-        text: "Nosotros",
-        to:"regalos",
-        title: "Regalos personalizados",
-        active: false,
-      },
-      {
-        icon: require('@/images/icons/candy-shop.png'),
-        text: "Inicio",
-        to:"dulces-despensa-bar",
-        title: "Dulces y Despensa Bar",
-        active: true,
-      }
-    ]
+    ],
   }),
 };
 </script>
