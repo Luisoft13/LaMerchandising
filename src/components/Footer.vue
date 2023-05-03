@@ -39,55 +39,10 @@
             <li>
               <v-icon>mdi-chevron-right</v-icon>
               <router-link
-                to="textiles"
-                style="text-decoration:none; color: white"
-              >
-                Productos Textiles
-              </router-link>
-            </li>
-            <li>
-              <v-icon>mdi-chevron-right</v-icon>
-              <router-link
                 to="productos"
                 style="text-decoration:none; color: white"
               >
                 Productos
-              </router-link>
-            </li>
-            <li>
-              <v-icon>mdi-chevron-right</v-icon>
-              <router-link
-                to="dulces-despensa-bar"
-                style="text-decoration:none; color: white"
-              >
-                Dulces y Despensa Bar
-              </router-link>
-            </li>
-            <li>
-              <v-icon>mdi-chevron-right</v-icon>
-              <router-link
-                to="tecnologia"
-                style="text-decoration:none; color: white"
-              >
-                Productos Tecnológicos
-              </router-link>
-            </li>
-            <li>
-              <v-icon>mdi-chevron-right</v-icon>
-              <router-link
-                to="seguridad-higiene"
-                style="text-decoration:none; color: white"
-              >
-                Seguridad e Higiene
-              </router-link>
-            </li>
-            <li>
-              <v-icon>mdi-chevron-right</v-icon>
-              <router-link
-                to="regalos"
-                style="text-decoration:none; color: white"
-              >
-                Regalos personalizados
               </router-link>
             </li>
           </ul>
