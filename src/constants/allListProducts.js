@@ -1,5 +1,12 @@
 const allListProducts = [
   {
+    id: 226,
+    src: require("@/images/otrosproductos/img119.jpeg"),
+    name: "Portabotella en cuero y biocuero, en diferentes colores",
+    code: "LM-TP226",
+    flex: 12,
+  },
+  {
     id: 225,
     src: require("@/images/otrosproductos/img116.png"),
     name: "Tomatodo liviano con doble impresión delantero, posterior",
@@ -29,7 +36,7 @@ const allListProducts = [
   },
   {
     id: 221,
-    src: require("@/images/otrosproductos/img118.jpeg"),
+    src: require("@/images/otrosproductos/img118.png"),
     name: "Copas, vasos y envase con tapa con nombre",
     code: "LM-TP221",
     flex: 12,

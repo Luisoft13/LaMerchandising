@@ -29,7 +29,7 @@ const listOtrosProductos = [
   },
   {
     id: 118,
-    src: require("@/images/otrosproductos/img118.jpeg"),
+    src: require("@/images/otrosproductos/img118.png"),
     name: "Copas, vasos y envase con tapa con nombre",
     code: "LM-TP119",
     flex: 12,
