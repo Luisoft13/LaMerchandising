@@ -3,16 +3,24 @@
     <Header />
     <v-app class="content_app">
       <div class="content_portada">
-        <div class="content_portada__title">
-          <h1 class="content_portada__title_h1">Productos</h1>
-        </div>
-        <v-img
-          :src="require('@/images/ProductSection/img2.png')"
-          class="content_portada__img"
-          height="300px"
-          max-width="500px"
-        >
-        </v-img>
+        <v-carousel :show-arrows="true" cycle hide-delimiters height="auto">
+          <v-carousel-item
+            v-for="(item, i) in items"
+            :key="i"
+            reverse-transition="fade-transition"
+          >
+            <div class="content_portada__title">
+              <h1 class="content_portada__title_h1">{{item.title}}</h1>
+            </div>
+            <v-img
+              :src="item.imgSrc"
+              class="content_portada__img mx-auto"
+              height="300px"
+              max-width="500px"
+            >
+            </v-img>
+          </v-carousel-item>
+        </v-carousel>
       </div>
       <div class="text-center content_products_inicio">
         <ProductList
@@ -29,12 +37,7 @@
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import { listOtrosProductos } from "@/constants/listOtrosProductos.js";
-import { listProductsDespensaBar } from "@/constants/listProductsDespensaBar.js";
-import { listProductsRegalos } from "@/constants/listProductsRegalos.js";
-import { listProductsSeguridadHigiene } from "@/constants/listProductsSeguridadHigiene.js";
-import { listProductsTecnologia } from "@/constants/listProductsTecnologia.js";
-import { listProductsTextiles } from "@/constants/listProductsTextiles.js";
+import { allListProducts } from "@/constants/allListProducts.js";
 import Whatsapp from "@/components/Whatsapp.vue";
 import ProductList from "@/components/ProductList.vue";
 
@@ -51,6 +54,32 @@ export default {
       showModal: false,
       listOtrosProductos: [],
       product: null,
+      items: [
+        {
+          title: "Productos",
+          imgSrc: require("@/images/ProductSection/img2.png"),
+        },
+        {
+          title: "Textiles",
+          imgSrc: require("@/images/ProductSection/img1.png"),
+        },
+        {
+          title: "Tecnología",
+          imgSrc: require("@/images/ProductSection/img42.png"),
+        },
+        {
+          title: "Bar, dulce y despensa",
+          imgSrc: require("@/images/ProductSection/img3.png"),
+        },
+        {
+          title: "Regalos personalizados",
+          imgSrc: require("@/images/ProductSection/img62.gif"),
+        },
+        {
+          title: "Seguridad e higiene",
+          imgSrc: require("@/images/ProductSection/img52.png"),
+        },
+      ],
     };
   },
   metaInfo() {
@@ -67,16 +96,7 @@ export default {
     };
   },
   created() {
-    const products = [
-      ...listOtrosProductos,
-      ...listProductsDespensaBar,
-      ...listProductsRegalos,
-      ...listProductsSeguridadHigiene,
-      ...listProductsTecnologia,
-      ...listProductsTextiles,
-    ];
-    console.log('products', products)
-    this.listOtrosProductos = products;
+    this.listOtrosProductos = allListProducts;
   },
   methods: {
     handleShowModal(product) {
