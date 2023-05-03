@@ -19,7 +19,7 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn color="#00677f" dark>
-                <router-link class="content_images_btn" :to="card.to">Ver productos</router-link>
+                <router-link class="content_images_btn" :to="card.to">Ver en productos</router-link>
                 <v-icon color="white">mdi-arrow-right</v-icon>
               </v-btn>
             </v-card-actions>
