@@ -9,16 +9,19 @@
             :key="i"
             reverse-transition="fade-transition"
           >
-            <div class="content_portada__title">
-              <h1 class="content_portada__title_h1">{{item.title}}</h1>
+          <div :style="`background-color: ${backgroundColor(item)};`">
+            <div class="content_portada__container">
+              <div class="content_portada__title">
+                <h1 class="content_portada__title_h1">{{item.title}}</h1>
+              </div>
+              <v-img
+                :src="item.imgSrc"
+                class="content_portada__img mx-auto"
+                height="300px"
+                max-width="500px"
+              />
             </div>
-            <v-img
-              :src="item.imgSrc"
-              class="content_portada__img mx-auto"
-              height="300px"
-              max-width="500px"
-            >
-            </v-img>
+          </div>
           </v-carousel-item>
         </v-carousel>
       </div>
@@ -56,26 +59,32 @@ export default {
       product: null,
       items: [
         {
+          id: 1,
           title: "Productos",
           imgSrc: require("@/images/ProductSection/img2.png"),
         },
         {
+          id: 2,
           title: "Textiles",
           imgSrc: require("@/images/ProductSection/img1.png"),
         },
         {
+          id: 3,
           title: "Tecnología",
           imgSrc: require("@/images/ProductSection/img42.png"),
         },
         {
+          id: 4,
           title: "Bar, dulce y despensa",
           imgSrc: require("@/images/ProductSection/img3.png"),
         },
         {
+          id: 5,
           title: "Regalos personalizados",
           imgSrc: require("@/images/ProductSection/img62.gif"),
         },
         {
+          id: 6,
           title: "Seguridad e higiene",
           imgSrc: require("@/images/ProductSection/img52.png"),
         },
@@ -103,6 +112,15 @@ export default {
       this.product = product;
       this.showModal = true;
     },
+    backgroundColor(item) {
+      if (item.id === 1) return 'rgb(255, 71, 71)'
+      if (item.id === 2) return 'rgb(92, 184, 0)'
+      if (item.id === 3) return 'rgb(255, 141, 8)'
+      if (item.id === 4) return 'rgb(248, 140, 147)'
+      if (item.id === 5) return 'rgb(0, 106, 98)'
+      if (item.id === 6) return 'rgb(120, 104, 222)'
+      return 'rgb(0, 103, 127)'
+    }
   },
 };
 </script>
@@ -123,12 +141,18 @@ export default {
   margin-bottom: 30px;
 }
 .content_portada {
-  background-color: rgb(0, 103, 127);
   display: flex;
   justify-content: space-around;
+  &__container {
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
   &__title {
     margin: auto;
-    color: rgba(242, 38, 19, 1);
+    color: white;
+    text-decoration: underline;
   }
   &__title_h1 {
     font-size: 60px;
