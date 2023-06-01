@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <v-app>
     <Header />
-    <v-app class="content_app">
+    <div class="content_app">
       <div class="content_portada">
         <v-carousel :show-arrows="true" cycle hide-delimiters height="auto">
           <v-carousel-item
@@ -10,16 +10,17 @@
             reverse-transition="fade-transition"
           >
           <div :style="`background-color: ${backgroundColor(item)};`">
-            <div class="content_portada__container">
-              <div class="content_portada__title">
-                <h1 class="content_portada__title_h1">{{item.title}}</h1>
-              </div>
+            <div class="content_portada__container d-flex py-2">
               <v-img
+                v-if="!$vuetify.breakpoint.smAndDown"
                 :src="item.imgSrc"
                 class="content_portada__img mx-auto"
-                height="300px"
+                height="400px"
                 max-width="500px"
               />
+              <div class="content_portada__title px-8">
+                <div class="content_portada__title_h1 mb-0" style="border-top: 2px solid white; border-bottom:2px solid white">{{item.title}}</div>
+              </div>
             </div>
           </div>
           </v-carousel-item>
@@ -32,10 +33,10 @@
         />
       </div>
       <ProductModal :product="product" v-model="showModal" />
-    </v-app>
+    </div>
     <Footer />
     <Whatsapp />
-  </div>
+  </v-app>
 </template>
 <script>
 import Header from "@/components/Header.vue";
@@ -61,32 +62,32 @@ export default {
         {
           id: 1,
           title: "Productos",
-          imgSrc: require("@/images/ProductSection/img2.png"),
+          imgSrc: require("@/images/ProductSection/productos.png"),
         },
         {
           id: 2,
           title: "Textiles",
-          imgSrc: require("@/images/ProductSection/img1.png"),
+          imgSrc: require("@/images/ProductSection/textiles.png"),
         },
         {
           id: 3,
           title: "Tecnología",
-          imgSrc: require("@/images/ProductSection/img42.png"),
+          imgSrc: require("@/images/ProductSection/tecnologia.png"),
         },
         {
           id: 4,
           title: "Bar, dulce y despensa",
-          imgSrc: require("@/images/ProductSection/img3.png"),
+          imgSrc: require("@/images/ProductSection/despensa.png"),
         },
         {
           id: 5,
           title: "Regalos personalizados",
-          imgSrc: require("@/images/ProductSection/img62.gif"),
+          imgSrc: require("@/images/ProductSection/regalos.png"),
         },
         {
           id: 6,
           title: "Seguridad e higiene",
-          imgSrc: require("@/images/ProductSection/img52.png"),
+          imgSrc: require("@/images/ProductSection/img53.png"),
         },
       ],
     };
@@ -113,17 +114,18 @@ export default {
       this.showModal = true;
     },
     backgroundColor(item) {
-      if (item.id === 1) return 'rgb(255, 71, 71)'
-      if (item.id === 2) return 'rgb(92, 184, 0)'
-      if (item.id === 3) return 'rgb(255, 141, 8)'
+      if (item.id === 1) return 'rgb(55, 198, 124)'
+      if (item.id === 2) return '#FF08F8'
+      if (item.id === 3) return '#F5EC17'
       if (item.id === 4) return 'rgb(248, 140, 147)'
-      if (item.id === 5) return 'rgb(0, 106, 98)'
+      if (item.id === 5) return 'rgb(8, 38, 255)'
       if (item.id === 6) return 'rgb(120, 104, 222)'
       return 'rgb(0, 103, 127)'
     }
   },
 };
 </script>
+
 <style lang="scss" scoped>
 .content_app {
   min-height: 100% !important;
@@ -148,25 +150,36 @@ export default {
     border-right: 4px solid white;
     margin-right: 4px;
     margin-left: 4px;
+    display:grid;
+    grid-template-columns: 60% 40%;
   }
   &__title {
     margin: auto;
     color: white;
-    text-decoration: underline;
   }
   &__title_h1 {
     font-size: 60px;
   }
+  @media screen and (max-width: 960px) {
+    &__title {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    &__img {
+      display: none;
+    }
+  }
   @media screen and (max-width: 625px) {
     &__title {
       font-size: 30px !important;
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
     &__img {
       display: none;
     }
     &__title_h1 {
       font-size: 30px;
-      margin-top: 10px;
     }
   }
 }
