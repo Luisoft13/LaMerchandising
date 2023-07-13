@@ -1,5 +1,47 @@
 const allListProducts = [
   {
+    id: 232,
+    src: require("@/images/otrosproductos/img125.webp"),
+    name: "Abanico de madera con impresión a un solo color.",
+    code: "LM-TP232",
+    flex: 12,
+  },
+  {
+    id: 231,
+    src: require("@/images/otrosproductos/img124.webp"),
+    name: "Banner con brillante impresión a color",
+    code: "LM-TP231",
+    flex: 12,
+  },
+  {
+    id: 230,
+    src: require("@/images/otrosproductos/img123.webp"),
+    name: "Pequeña y linda caja de cuero con impresión repujada y tarjetas empresariales.",
+    code: "LM-TP230",
+    flex: 12,
+  },
+  {
+    id: 229,
+    src: require("@/images/otrosproductos/img122.webp"),
+    name: "Mochila de emergencia con varios bolsillos.",
+    code: "LM-TP229",
+    flex: 12,
+  },
+  {
+    id: 228,
+    src: require("@/images/otrosproductos/img121.webp"),
+    name: "Llavero con destapador y logo impreso",
+    code: "LM-TP228",
+    flex: 12,
+  },
+  {
+    id: 227,
+    src: require("@/images/otrosproductos/img120.webp"),
+    name: "Caja de cuero con telar a color.",
+    code: "LM-TP227",
+    flex: 12,
+  },
+  {
     id: 226,
     src: require("@/images/otrosproductos/img119.jpeg"),
     name: "Portabotella en cuero y biocuero, en diferentes colores",
