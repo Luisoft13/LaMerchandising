@@ -9,21 +9,7 @@
             :key="i"
             reverse-transition="fade-transition"
           >
-            <v-img :src="item.imgSrc"></v-img>
-            <!--<div :style="`background-color: ${backgroundColor(item)};`">
-              <div class="content_portada__container d-flex py-2">
-              <v-img
-                v-if="!$vuetify.breakpoint.smAndDown"
-                :src="item.imgSrc"
-                class="content_portada__img mx-auto"
-                height="400px"
-                max-width="500px"
-              />
-              <div class="content_portada__title px-8">
-                <div class="content_portada__title_h1 mb-0" style="border-top: 2px solid white; border-bottom:2px solid white">{{item.title}}</div>
-              </div>
-            </div>
-          </div>-->
+            <img :src="item.imgSrc" :lazy-src="item.imgSrc" height="100%" width="100%" alt="" class="content_portada__image"/>
           </v-carousel-item>
         </v-carousel>
       </div>
@@ -107,6 +93,7 @@ export default {
     };
   },
   created() {
+    console.log('new version')
     this.listOtrosProductos = allListProducts;
   },
   methods: {
@@ -153,6 +140,15 @@ export default {
     margin-left: 4px;
     display: grid;
     grid-template-columns: 60% 40%;
+  }
+
+  &_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
   }
   &__title {
     margin: auto;
